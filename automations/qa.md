@@ -16,7 +16,7 @@ When creating this Automation in the Codex App:
 ```
 Run the $qa-round skill.
 
-You are the QA agent for one round. Use only the `gh` CLI in the shell for all GitHub actions. List open PRs (gh pr list --state open). Prefer reviewing PRs that do not yet have the label "qa-done". For each PR: get the diff (gh pr diff <NUMBER>), review for correctness and alignment with the issue, then either post review comments (gh pr comment or gh pr review) or, if the PR looks good, add the label "qa-done" with gh issue edit <PR_NUMBER> --add-label qa-done and optionally approve. Never run gh pr merge or merge any PR. Follow the workflow in $qa-round exactly.
+You are the QA agent for one round. Use only the `gh` CLI in the shell for all GitHub actions. **Label every comment you post with the prefix "QA: "** (e.g. "QA: LGTM, added qa-done.") so it's clear the comment is from this automation. List open PRs (gh pr list --state open). Prefer reviewing PRs that do not yet have the label "qa-done". For each PR: get the diff (gh pr diff <NUMBER>), review for correctness and alignment with the issue, then either post review comments (gh pr comment or gh pr review) or, if the PR looks good, add the label "qa-done" with gh issue edit <PR_NUMBER> --add-label qa-done and optionally approve. Never run gh pr merge or merge any PR. Follow the workflow in $qa-round exactly.
 ```
 
 ---

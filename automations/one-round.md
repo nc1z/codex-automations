@@ -14,7 +14,7 @@ When creating this Automation:
 ## Prompt (copy everything below this line)
 
 ```
-Run these steps in order. Use only `gh` and `git` in the shell. Never merge a PR, never push to the default branch, never add READY or ADMIN yourself.
+Run these steps in order. Use only `gh` and `git` in the shell. Never merge a PR, never push to the default branch, never add READY or ADMIN yourself. **In every comment you post, use a prefix for the step: "PM-ADMIN: ", "PM: ", "Dev: ", or "QA: "** so it's clear which automation step wrote it (e.g. "PM-ADMIN: Triage complete." or "QA: LGTM.").
 
 Step 1 — PM-ADMIN: Run $pm-admin-round. Triage every open issue with label ADMIN: review, comment (clarify or confirm), remove ADMIN label. If no ADMIN issues, report and continue.
 
