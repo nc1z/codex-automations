@@ -145,3 +145,18 @@ You stay in control by:
 - Editing `NORTHSTAR.md`,
 - Adding/removing labels on issues,
 - Reviewing and merging PRs.
+
+---
+
+## Optional: Easy deployment with Vercel
+
+If your project includes a web app (for example a dashboard, status page, or docs site), an easy way to deploy it **without custom CI pipelines** is to use **Vercel’s “Import Git Repository”** flow:
+
+- Push your repo to GitHub.
+- In Vercel, choose **Import Git Repository** and select this repo.
+- Choose the appropriate framework preset (or “Other” if none) and confirm the defaults.
+- Vercel will:
+  - Build and deploy on every push to the selected branch.
+  - Provide preview URLs for PRs and a production URL for your main branch.
+
+This keeps deployment simple while Codex automations focus on issues, PRs, and code changes rather than CI/CD setup.
